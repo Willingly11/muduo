@@ -1,0 +1,10 @@
+build/
+*.o
+*.a
+*.so
+*.exe
+*.out
+.cache/
+.vscode/
+CMakeCache.txt
+CMakeFiles/
