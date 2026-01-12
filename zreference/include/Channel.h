@@ -71,7 +71,7 @@ private:
     int index_; //kNew, kAdded, kDeleted 用于标识channel在Poller中的状态
 
     std::weak_ptr<void> tie_;
-    bool tied_; //
+    bool tied_; 
 
     // 因为channel通道里可获知fd最终发生的具体的事件events，所以它负责调用具体事件的回调操作
     ReadEventCallback readCallback_;
