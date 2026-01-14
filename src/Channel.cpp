@@ -1,5 +1,7 @@
-#include "channel.h"
-
+#include "Channel.h"
+#include "EventLoop.h"
+#include "Logger.h"
+#include <sys/epoll.h>
 
 
 Channel::Channel(EventLoop* loop, int fd)
@@ -35,21 +37,27 @@ void Channel::handleEvent(Timestamp receiveTime)
 
 void Channel::handleEventWithGuard(Timestamp receiveTime)
 {
+    LOG_INFO("channel handleEvent revents:%d\n", revents_);
+
+    // 读
     if ((revents_ & kReadEvent) && readCallback_)
     {
         readCallback_(receiveTime);
     }
+    // 写
     if ((revents_ & kWriteEvent) && writeCallback_)
     {
         writeCallback_();
     }
-    
+    // 关闭
     if ((revents_ & EPOLLHUP) && !(revents_ & EPOLLIN) && closeCallback_)
     {
         closeCallback_();
     }
+    // 错误
     if ((revents_ & EPOLLERR) && errorCallback_)
     {
+        LOG_ERROR("Channel::handleEvent() EPOLLERR fd:%d", fd_);
         errorCallback_();
     }
 }

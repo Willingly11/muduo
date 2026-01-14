@@ -5,7 +5,7 @@
 ## 📅 项目进度 (Project Progress)
 
 ### 第一阶段：基础组件 (Infrastructure)
-- [ ] **Noncopyable** (`noncopyable.h`) - 对象语义语义
+- [x] **Noncopyable** (`noncopyable.h`) - 对象语义语义
 - [ ] **Timestamp** (`Timestamp.h/cc`) - 时间戳类
 - [ ] **Logger** (`Logger.h/cc`) - 简单的同步日志（或简易封装）
 - [ ] **Thread** (`Thread.h/cc`) - 线程包装
@@ -13,13 +13,16 @@
 
 ### 第二阶段：Reactor 模型 (Core)
 - [x] **Channel** (`Channel.h/cc`) - 事件分发器 (核心)
-- [ ] **Poller** (`Poller.h/cc`) - I/O 复用基类
-- [ ] **EPollPoller** (`EPollPoller.h/cc`) - epoll 的封装
-- [ ] **EventLoop** (`EventLoop.h/cc`) - 事件循环 (核心)
-- [ ] **InetAddress** (`InetAddress.h/cc`) - 地址封装
+- [x] **Poller** (`Poller.h/cc`) - I/O 复用基类
+- [x] **EPollPoller** (`EPollPoller.h/cc`) - epoll 的封装
+- [x] **EventLoop** (`EventLoop.h/cc`) - 事件循环 (核心)
+- [x] **InetAddress** (`InetAddress.h/cc`) - 地址封装
+
+### 测试一
+- [x] **test_Channel_Epoll_EventLoop**(`test_Channel_Epoll_EventLoop.cpp`)
 
 ### 第三阶段：网络模块 (Network)
-- [ ] **Socket** (`Socket.h/cc`) - RAII 封装 socket fd
+- [x] **Socket** (`Socket.h/cc`) - RAII 封装 socket fd
 - [ ] **Acceptor** (`Acceptor.h/cc`) - 专门处理新连接
 - [ ] **Buffer** (`Buffer.h/cc`) - 应用层缓冲区 (非常重要)
 - [ ] **TcpConnection** (`TcpConnection.h/cc`) - 管理一条 TCP 连接

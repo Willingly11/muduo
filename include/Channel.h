@@ -25,6 +25,16 @@ public:
     int events() const { return events_; }
     void set_revents(int revt) { revents_ = revt; }
 
+    void enableReading() { events_ |= kReadEvent; update(); }
+    void disableReading() { events_ &= ~kReadEvent; update(); }
+    void enableWriting() { events_ |= kWriteEvent; update(); }
+    void disableWriting() { events_ &= ~kWriteEvent; update(); }
+    void disableAll() { events_ = kNoneEvent; update(); }  
+
+    bool isNoneEvent() const { return events_ == kNoneEvent; }
+    bool isWriting() const { return events_ & kWriteEvent; }
+    bool isReading() const { return events_ & kReadEvent; }
+
     int index() { return index_; }
     void set_index(int idx) { index_ = idx; }
 
@@ -34,18 +44,21 @@ public:
     void setWriteCallback(EventCallback cb) { writeCallback_ = std::move(cb); }
     void setCloseCallback(EventCallback cb) { closeCallback_ = std::move(cb); }
     void setErrorCallback(EventCallback cb) { errorCallback_ = std::move(cb); }
-
+    
+    void remove(); //作用：将 Channel 从 EventLoop 中彻底移除（不再监听该 fd）
 
 private:
     void handleEventWithGuard(Timestamp receiveTime);
     void update();
-    void remove();
 
+    static constexpr int kNoneEvent = 0;
+    static constexpr int kReadEvent = EPOLLIN | EPOLLPRI; //EPOLLRPI：带外数据
+    static constexpr int kWriteEvent = EPOLLOUT;
 
     EventLoop *loop_; //所属的EventLoop
     int fd_;
-    int events_;
-    int revents_;
+    int events_; //注册感兴趣的事件
+    int revents_; //poller返回的具体发生的事件
     int index_; //kNew(-1), kAdded(1), kDeleted(2) 用于标识channel在Poller中的状态
 
     bool tied_;
@@ -56,9 +69,7 @@ private:
     EventCallback closeCallback_;
     EventCallback errorCallback_;
 
-    static constexpr int kNoneEvent = 0;
-    static constexpr int kReadEvent = EPOLLIN | EPOLLPRI; //EPOLLRPI：带外数据
-    static constexpr int kWriteEvent = EPOLLOUT;
+
 };
 
 /* TcpServer
