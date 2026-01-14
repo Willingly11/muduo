@@ -1,8 +1,53 @@
 [
 {
   "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Acceptor.cpp.o -c /home/admin/muduo-core/src/Acceptor.cpp",
+  "file": "/home/admin/muduo-core/src/Acceptor.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Channel.cpp.o -c /home/admin/muduo-core/src/Channel.cpp",
+  "file": "/home/admin/muduo-core/src/Channel.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
   "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/CurrentThread.cpp.o -c /home/admin/muduo-core/src/CurrentThread.cpp",
   "file": "/home/admin/muduo-core/src/CurrentThread.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/DefaultPoller.cpp.o -c /home/admin/muduo-core/src/DefaultPoller.cpp",
+  "file": "/home/admin/muduo-core/src/DefaultPoller.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/EpollPoller.cpp.o -c /home/admin/muduo-core/src/EpollPoller.cpp",
+  "file": "/home/admin/muduo-core/src/EpollPoller.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/EventLoop.cpp.o -c /home/admin/muduo-core/src/EventLoop.cpp",
+  "file": "/home/admin/muduo-core/src/EventLoop.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/InetAddress.cpp.o -c /home/admin/muduo-core/src/InetAddress.cpp",
+  "file": "/home/admin/muduo-core/src/InetAddress.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Logger.cc.o -c /home/admin/muduo-core/src/Logger.cc",
+  "file": "/home/admin/muduo-core/src/Logger.cc"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Poller.cpp.o -c /home/admin/muduo-core/src/Poller.cpp",
+  "file": "/home/admin/muduo-core/src/Poller.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Socket.cpp.o -c /home/admin/muduo-core/src/Socket.cpp",
+  "file": "/home/admin/muduo-core/src/Socket.cpp"
 },
 {
   "directory": "/home/admin/muduo-core/build",
@@ -16,12 +61,7 @@
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/channel.cpp.o -c /home/admin/muduo-core/src/channel.cpp",
-  "file": "/home/admin/muduo-core/src/channel.cpp"
-},
-{
-  "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o example/CMakeFiles/testserver.dir/testserver.cpp.o -c /home/admin/muduo-core/example/testserver.cpp",
-  "file": "/home/admin/muduo-core/example/testserver.cpp"
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o example/CMakeFiles/test_Channel_Epoll_EventLoop.dir/test_Channel_Epoll_EventLoop.cpp.o -c /home/admin/muduo-core/example/test_Channel_Epoll_EventLoop.cpp",
+  "file": "/home/admin/muduo-core/example/test_Channel_Epoll_EventLoop.cpp"
 }
 ]
