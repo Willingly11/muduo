@@ -2,6 +2,15 @@
 #include "TcpConnection.h"
 #include "Timestamp.h"
 #include "Logger.h"
+#include "Socket.h"
+#include "Channel.h"
+#include "Buffer.h"
+#include "EventLoop.h"
+
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <errno.h>
 
 TcpConnection::TcpConnection(EventLoop* loop,
                              int sockfd,
@@ -102,9 +111,10 @@ void TcpConnection::sendInLoop(const std::string& message)
                oldlen < highWaterMark_ &&
                highWaterMarkCallback_)
             {
+                int len = oldlen + remaining;
                 loop_->queueInLoop(
-                    [this, oldlen + remaining]() 
-                    { highWaterMarkCallback_(shared_from_this(), oldlen + remaining); }
+                    [this, len]() 
+                    { highWaterMarkCallback_(shared_from_this(), len); }
                 );
             }
             outputBuffer_->append(message.data() + nwrote, remaining);
@@ -206,11 +216,27 @@ void TcpConnection::handleWrite()
 void TcpConnection::handleClose()
 {
     LOG_INFO("TcpConnection::handleClose() - connection [%s] closed", name_.c_str());
-    state_ = StateE::kDisconnected;
+    // state_ = StateE::kDisconnected; //这里是否要修改状态?
     channel_->disableAll();
 
     TcpConnectionPtr guardThis(shared_from_this()); //
     closeCallback_(guardThis);
+}
+
+void TcpConnection::handleError()
+{
+    int optval;
+    socklen_t optlen = sizeof optval;
+    int err = 0;
+    if (::getsockopt(channel_->fd(), SOL_SOCKET, SO_ERROR, &optval, &optlen) < 0)
+    {
+        err = errno;
+    }
+    else
+    {
+        err = optval;
+    }
+    LOG_ERROR("TcpConnection::handleError name:%s - SO_ERROR:%d", name_.c_str(), err);
 }
 
 

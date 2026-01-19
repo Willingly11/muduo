@@ -1,0 +1,18 @@
+[INFO]2026/01/19 18:37:05 : channel handleEvent revents:1
+
+[INFO]2026/01/19 18:37:05 : TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-0.0.0.0:8000#1] from 127.0.0.1:56102
+
+[INFO]2026/01/19 18:37:05 : TcpServer creating TcpConnection
+[INFO]2026/01/19 18:37:05 : TcpServer created TcpConnection
+[INFO]2026/01/19 18:37:05 : TcpServer queuing connectionEstablished
+[INFO]2026/01/19 18:37:05 : channel handleEvent revents:1
+
+[INFO]2026/01/19 18:37:05 : TcpConnection::connectionEstablished state=1
+[INFO]2026/01/19 18:37:05 : Connection UP : 127.0.0.1:56102
+[INFO]2026/01/19 18:37:05 : channel handleEvent revents:1
+
+[INFO]2026/01/19 18:37:05 : TcpConnection::handleClose() - connection [EchoServer-01-0.0.0.0:8000#1] closed
+[INFO]2026/01/19 18:37:05 : channel handleEvent revents:1
+
+[INFO]2026/01/19 18:37:05 : TcpServer::removeConnectionInLoop [EchoServer-01] - connection EchoServer-01-0.0.0.0:8000#1
+

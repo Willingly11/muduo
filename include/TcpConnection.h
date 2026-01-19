@@ -13,7 +13,7 @@ class Buffer;
 class Timestamp;
 
 
-class TcpConnection : noncopyable, std::enable_shared_from_this<TcpConnection>
+class TcpConnection : public std::enable_shared_from_this<TcpConnection>, public noncopyable
 {
 public:
     TcpConnection(EventLoop* loop,

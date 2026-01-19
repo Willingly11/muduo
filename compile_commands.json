@@ -86,7 +86,7 @@
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o example/CMakeFiles/test_Channel_Epoll_EventLoop.dir/test_Channel_Epoll_EventLoop.cpp.o -c /home/admin/muduo-core/example/test_Channel_Epoll_EventLoop.cpp",
-  "file": "/home/admin/muduo-core/example/test_Channel_Epoll_EventLoop.cpp"
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o example/CMakeFiles/EchoServer.dir/EchoServer.cpp.o -c /home/admin/muduo-core/example/EchoServer.cpp",
+  "file": "/home/admin/muduo-core/example/EchoServer.cpp"
 }
 ]
