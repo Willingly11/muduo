@@ -23,13 +23,13 @@
 
 ### 第三阶段：网络模块 (Network)
 - [x] **Socket** (`Socket.h/cc`) - RAII 封装 socket fd
-- [ ] **Acceptor** (`Acceptor.h/cc`) - 专门处理新连接
-- [ ] **Buffer** (`Buffer.h/cc`) - 应用层缓冲区 (非常重要)
-- [ ] **TcpConnection** (`TcpConnection.h/cc`) - 管理一条 TCP 连接
+- [x] **Acceptor** (`Acceptor.h/cc`) - 专门处理新连接
+- [x] **Buffer** (`Buffer.h/cc`) - 应用层缓冲区 (非常重要)
+- [x] **TcpConnection** (`TcpConnection.h/cc`) - 管理一条 TCP 连接
 
 ### 第四阶段：服务器与回调 (Server)
-- [ ] **TcpServer** (`TcpServer.h/cc`) - 用户使用的服务器类
-- [ ] **Callbacks** (`Callbacks.h`) - 回调函数类型定义
+- [x] **TcpServer** (`TcpServer.h/cc`) - 用户使用的服务器类
+- [x] **Callbacks** (`Callbacks.h`) - 回调函数类型定义
 - [ ] **EventLoopThread** (`EventLoopThread.h/cc`) - 开启专门的 I/O 线程
 - [ ] **EventLoopThreadPool** (`EventLoopThreadPool.h/cc`) - I/O 线程池
 

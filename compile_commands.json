@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Buffer.cpp.o -c /home/admin/muduo-core/src/Buffer.cpp",
+  "file": "/home/admin/muduo-core/src/Buffer.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
   "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Channel.cpp.o -c /home/admin/muduo-core/src/Channel.cpp",
   "file": "/home/admin/muduo-core/src/Channel.cpp"
 },
@@ -31,13 +36,23 @@
 },
 {
   "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o -c /home/admin/muduo-core/src/EventLoopThread.cc",
+  "file": "/home/admin/muduo-core/src/EventLoopThread.cc"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o -c /home/admin/muduo-core/src/EventLoopThreadPool.cc",
+  "file": "/home/admin/muduo-core/src/EventLoopThreadPool.cc"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
   "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/InetAddress.cpp.o -c /home/admin/muduo-core/src/InetAddress.cpp",
   "file": "/home/admin/muduo-core/src/InetAddress.cpp"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Logger.cc.o -c /home/admin/muduo-core/src/Logger.cc",
-  "file": "/home/admin/muduo-core/src/Logger.cc"
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Logger.cpp.o -c /home/admin/muduo-core/src/Logger.cpp",
+  "file": "/home/admin/muduo-core/src/Logger.cpp"
 },
 {
   "directory": "/home/admin/muduo-core/build",
@@ -48,6 +63,16 @@
   "directory": "/home/admin/muduo-core/build",
   "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Socket.cpp.o -c /home/admin/muduo-core/src/Socket.cpp",
   "file": "/home/admin/muduo-core/src/Socket.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/TcpConnnection.cpp.o -c /home/admin/muduo-core/src/TcpConnnection.cpp",
+  "file": "/home/admin/muduo-core/src/TcpConnnection.cpp"
+},
+{
+  "directory": "/home/admin/muduo-core/build",
+  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -Wall -g -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/TcpServer.cpp.o -c /home/admin/muduo-core/src/TcpServer.cpp",
+  "file": "/home/admin/muduo-core/src/TcpServer.cpp"
 },
 {
   "directory": "/home/admin/muduo-core/build",
