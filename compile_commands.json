@@ -1,92 +1,92 @@
 [
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Acceptor.cc.o -c /home/admin/muduo-core/src/Acceptor.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Acceptor.cc.o -c /home/admin/muduo-core/src/Acceptor.cc",
   "file": "/home/admin/muduo-core/src/Acceptor.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Buffer.cc.o -c /home/admin/muduo-core/src/Buffer.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Buffer.cc.o -c /home/admin/muduo-core/src/Buffer.cc",
   "file": "/home/admin/muduo-core/src/Buffer.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Channel.cc.o -c /home/admin/muduo-core/src/Channel.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Channel.cc.o -c /home/admin/muduo-core/src/Channel.cc",
   "file": "/home/admin/muduo-core/src/Channel.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/CurrentThread.cc.o -c /home/admin/muduo-core/src/CurrentThread.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/CurrentThread.cc.o -c /home/admin/muduo-core/src/CurrentThread.cc",
   "file": "/home/admin/muduo-core/src/CurrentThread.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/DefaultPoller.cc.o -c /home/admin/muduo-core/src/DefaultPoller.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/DefaultPoller.cc.o -c /home/admin/muduo-core/src/DefaultPoller.cc",
   "file": "/home/admin/muduo-core/src/DefaultPoller.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/EPollPoller.cc.o -c /home/admin/muduo-core/src/EPollPoller.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/EPollPoller.cc.o -c /home/admin/muduo-core/src/EPollPoller.cc",
   "file": "/home/admin/muduo-core/src/EPollPoller.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/EventLoop.cc.o -c /home/admin/muduo-core/src/EventLoop.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/EventLoop.cc.o -c /home/admin/muduo-core/src/EventLoop.cc",
   "file": "/home/admin/muduo-core/src/EventLoop.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/EventLoopThread.cc.o -c /home/admin/muduo-core/src/EventLoopThread.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/EventLoopThread.cc.o -c /home/admin/muduo-core/src/EventLoopThread.cc",
   "file": "/home/admin/muduo-core/src/EventLoopThread.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/EventLoopThreadPool.cc.o -c /home/admin/muduo-core/src/EventLoopThreadPool.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/EventLoopThreadPool.cc.o -c /home/admin/muduo-core/src/EventLoopThreadPool.cc",
   "file": "/home/admin/muduo-core/src/EventLoopThreadPool.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/InetAddress.cc.o -c /home/admin/muduo-core/src/InetAddress.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/InetAddress.cc.o -c /home/admin/muduo-core/src/InetAddress.cc",
   "file": "/home/admin/muduo-core/src/InetAddress.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Logger.cc.o -c /home/admin/muduo-core/src/Logger.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Logger.cc.o -c /home/admin/muduo-core/src/Logger.cc",
   "file": "/home/admin/muduo-core/src/Logger.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Poller.cc.o -c /home/admin/muduo-core/src/Poller.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Poller.cc.o -c /home/admin/muduo-core/src/Poller.cc",
   "file": "/home/admin/muduo-core/src/Poller.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Socket.cc.o -c /home/admin/muduo-core/src/Socket.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Socket.cc.o -c /home/admin/muduo-core/src/Socket.cc",
   "file": "/home/admin/muduo-core/src/Socket.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/TcpConnection.cc.o -c /home/admin/muduo-core/src/TcpConnection.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/TcpConnection.cc.o -c /home/admin/muduo-core/src/TcpConnection.cc",
   "file": "/home/admin/muduo-core/src/TcpConnection.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/TcpServer.cc.o -c /home/admin/muduo-core/src/TcpServer.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/TcpServer.cc.o -c /home/admin/muduo-core/src/TcpServer.cc",
   "file": "/home/admin/muduo-core/src/TcpServer.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Thread.cc.o -c /home/admin/muduo-core/src/Thread.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Thread.cc.o -c /home/admin/muduo-core/src/Thread.cc",
   "file": "/home/admin/muduo-core/src/Thread.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Timestamp.cc.o -c /home/admin/muduo-core/src/Timestamp.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -Dmuduo_core_EXPORTS -I/home/admin/muduo-core/include -g -fPIC -Wall -g -std=gnu++11 -o src/CMakeFiles/muduo_core.dir/Timestamp.cc.o -c /home/admin/muduo-core/src/Timestamp.cc",
   "file": "/home/admin/muduo-core/src/Timestamp.cc"
 },
 {
   "directory": "/home/admin/muduo-core/build",
-  "command": "/usr/bin/clang++ -I/home/admin/muduo-core/include -g -std=c++11 -Wall -std=gnu++11 -o example/CMakeFiles/testserver.dir/testserver.cc.o -c /home/admin/muduo-core/example/testserver.cc",
+  "command": "/usr/bin/clang++ -DMUDEBUG -I/home/admin/muduo-core/include -g -Wall -g -std=c++11 -std=gnu++11 -o example/CMakeFiles/testserver.dir/testserver.cc.o -c /home/admin/muduo-core/example/testserver.cc",
   "file": "/home/admin/muduo-core/example/testserver.cc"
 }
 ]

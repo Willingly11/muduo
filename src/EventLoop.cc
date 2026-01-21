@@ -10,7 +10,7 @@
 #include "Poller.h"
 
 // 防止一个线程创建多个EventLoop
-thread_local EventLoop *t_loopInThisThread = nullptr;
+thread_local EventLoop *t_loopInThisThread = nullptr; //one loop per thread的底层检查
 
 // 定义默认的Poller IO复用接口的超时时间
 const int kPollTimeMs = 10000; // 10000毫秒 = 10秒钟
@@ -44,11 +44,12 @@ int createEventfd()
 EventLoop::EventLoop()
     : looping_(false)
     , quit_(false)
-    , callingPendingFunctors_(false)
-    , threadId_(CurrentThread::tid())
+    , threadId_(CurrentThread::tid()) // 记录当前EventLoop是被哪个线程id创建的 即标识了当前EventLoop的所属线程id，tid()为获取当前线程id,线程已经启动
     , poller_(Poller::newDefaultPoller(this))
     , wakeupFd_(createEventfd())
     , wakeupChannel_(new Channel(this, wakeupFd_))
+    , callingPendingFunctors_(false)
+    // pendingFunctors_ 与 mutex_ 会调用默认构造函数
 {
     LOG_DEBUG("EventLoop created %p in thread %d\n", this, threadId_);
     if (t_loopInThisThread)
@@ -82,10 +83,11 @@ void EventLoop::loop()
     looping_ = true;
     quit_ = false;
 
-    LOG_INFO("EventLoop %p start looping\n", this);
+    LOG_INFO("EventLoop %d start looping\n", threadId_);
 
     while (!quit_)
     {
+        LOG_INFO("Wakeup fd:%d---------------------------------\n", wakeupFd_);
         activeChannels_.clear();
         pollRetureTime_ = poller_->poll(kPollTimeMs, &activeChannels_);
         for (Channel *channel : activeChannels_)
@@ -101,7 +103,7 @@ void EventLoop::loop()
          **/
         doPendingFunctors();
     }
-    LOG_INFO("EventLoop %p stop looping.\n", this);
+    LOG_INFO("EventLoop %d stop looping.\n", threadId_);
     looping_ = false;
 }
 

@@ -1,4 +1,6 @@
 #include "CurrentThread.h"
+#include <unistd.h>
+#include <sys/syscall.h>
 
 namespace CurrentThread
 {
@@ -8,7 +10,7 @@ namespace CurrentThread
     {
         if (t_cachedTid == 0)
         {
-            t_cachedTid = static_cast<pid_t>(::syscall(SYS_gettid));
+            t_cachedTid = static_cast<pid_t>(::syscall(SYS_gettid)); // 系统调用，获取线程的tid值
         }
     }
 }

@@ -6,6 +6,13 @@ project(muduo-core) #锁定项目的工作目录
 set (CMAKE_CXX_STANDARD 11) 
 set (CMAKE_CXX_STANDARD_REQUIRED True)
 
+#开启调试模式
+set(CMAKE_BUILD_TYPE Debug)
+add_compile_options(-Wall -g)
+
+# 定义调试宏，启用 LOG_DEBUG
+add_definitions(-DMUDEBUG) # 添加后可以在终端中看到LOG_DEBUG的信息，若删除则无法看到
+
 #链接必要的库，比如刚刚我们写好的在src文件Cmakelists中muduo-core_lib静态库，还有全局链接库
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 #示例静态库的输出
